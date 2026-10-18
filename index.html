@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Privacy policy · Caption Lab</title><style>@charset "UTF-8";
+:root { color-scheme: light dark; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: #f6f7f8; color: #24292f; --muted: #626d78; --line: #17241420; --link: #45671f; --surface: #ffffff; }
+@media (prefers-color-scheme: dark) { :root { background: #101418; color: #edf0f2; --muted: #a2abb4; --line: #ffffff18; --link: #c7f36b; --surface: #171d22; } }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 20px 48px; }
+main { max-width: 760px; margin: auto; }
+header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 26px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 16px; }
+.brand img { width: 36px; height: 36px; }
+h1 { font-size: clamp(25px, 5vw, 32px); letter-spacing: -.5px; margin: 24px 0 8px; line-height: 1.25; }
+h2 { font-size: 18px; margin: 28px 0 10px; line-height: 1.4; }
+p, li { font-size: 15px; line-height: 1.75; }
+p { margin: 10px 0; }
+li { margin-bottom: 8px; }
+ul, ol { padding-left: 24px; }
+a { color: var(--link); text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+.meta, footer { color: var(--muted); font-size: 13px; }
+.intro { padding: 16px 18px; border: 1px solid var(--line); background: var(--surface); border-radius: 12px; }
+.intro p { margin: 0; }
+footer { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 18px; display: flex; gap: 18px; flex-wrap: wrap; }
+code { font-size: .9em; overflow-wrap: anywhere; }
+</style></head>
+<body><main><header><div class="brand"><span>Caption Lab</span></div><h1>Privacy policy</h1><p class="meta">Version 1.3.0 · 18 October 2026</p></header><p class="intro">Caption Lab reads available YouTube captions in your browser. It has no account system, analytics, advertising, or collection server. Caption text and video details are not sent to the developer or a third-party service by the extension.</p>
+<h2>Information handled locally</h2>
+<ul>
+<li><strong>Website content:</strong> the current video's title, channel name, duration, caption languages, caption text, and timing information.</li>
+<li><strong>YouTube page and video identifiers:</strong> the current video URL/ID, playlist ID, and tab/window IDs. These let the extension identify the correct video, keep the panel open within a playlist, and close it when appropriate. Caption Lab does not read your browsing history database or pages on other sites.</li>
+<li><strong>Feature interactions:</strong> playback position, seeking, selected language, transcript search, following/scrolling state, and actions in Caption Lab. Search input is processed in the panel; the extension does not record general keystrokes or send usage analytics.</li>
+<li><strong>Caption request information:</strong> YouTube caption/transcript requests and their responses, including temporary signed caption URLs needed to retrieve the selected track. This is limited to YouTube's caption-related endpoints.</li>
+</ul>
+<h2>When processing happens</h2>
+<p>The bundled page adapters run on <code>https://www.youtube.com/*</code>, including before you open the side panel. They add the player shortcut, identify the current video, and can observe YouTube's own caption/transcript responses. Caption loading may request a verified YouTube timed-text URL using your existing YouTube session. It may temporarily activate or change the player's captions and restore the previous state, or use YouTube's own transcript control and close the duplicate panel after import. The extension does not send this information to its developer.</p>
+<h2>Storage and retention</h2>
+<p>Chrome's local extension storage saves theme, language, export format, and timecode preferences. Chrome session storage keeps panel ownership and playlist identity for the browser session; it does not store complete browsing URLs. Page memory holds bounded caches of up to 12 player caption responses, 12 complete transcripts, and four native transcript responses. These caches are cleared with the page's memory when the tab is closed or reloaded. The side panel holds the current transcript, search, and playback state in memory. Transcripts are not saved to extension storage.</p>
+<p>Copying places text on your system clipboard. Exporting creates a file in the location managed by your browser. Clipboard history, exported files, and any backups or synchronization you enable are controlled by you, Chrome, and your operating system. Removing the extension deletes its extension storage; exported files and clipboard history must be cleared separately.</p>
+<h2>Sharing and third parties</h2>
+<p>Caption Lab does not sell user data, use it for advertising, transfer it to data brokers, or use it to determine creditworthiness. Its use of user data is limited to the visible caption features described here and complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. There is no remote executable code or third-party analytics SDK.</p>
+<p>YouTube continues to receive its ordinary page, player, and caption requests under Google's own policies. The extension does not bypass access restrictions or inspect account passwords, authentication cookies, or payment information. If you contact support by email, your email provider processes the message, and the developer receives the information you choose to include.</p>
+<h2>Permissions</h2>
+<ul>
+<li><strong>YouTube host access:</strong> read available captions and metadata, add the shortcut, and interact with the player on YouTube only.</li>
+<li><strong>Side panel:</strong> display and toggle the transcript workspace.</li>
+<li><strong>Storage:</strong> save preferences and session panel/playlist state.</li>
+<li><strong>Clipboard write:</strong> copy transcript text when you click Copy text. Caption Lab does not read your clipboard.</li>
+<li><strong>Scripting:</strong> reconnect the bundled page adapters on an eligible YouTube tab after navigation, startup, or an extension update.</li>
+</ul>
+<h2>Your choices and contact</h2>
+<p>You can change site access or disable/remove Caption Lab in Chrome's extension settings. Restricting YouTube access may prevent the player shortcut or automatic caption loading from working. You control whether to copy, export, or share a transcript.</p>
+<p>Support and privacy questions: <a href="mailto:noorali99307@gmail.com">noorali99307@gmail.com</a>. Developer location: India.</p>
+<h2>Updates</h2>
+<p>This policy applies to Caption Lab 1.3.0. Material changes to data handling will be reflected in a revised policy and extension release. Last updated: 18 October 2026.</p><footer><a href="mailto:noorali99307@gmail.com">Contact support</a></footer></main></body></html>
