@@ -1,3 +1,5 @@
+<img src="assets/caption-lab-mark.svg" alt="Caption Lab logo" width="64" height="64">
+
 # Caption Lab privacy policy
 
 Public privacy policy for **Caption Lab — YouTube Captions**, version 1.3.0.
